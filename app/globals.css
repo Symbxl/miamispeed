@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+/*
+  Miami Speed Rentals — design system
+  Palette: black / light blue / pink. Every corner is a flat 3px radius:
+  the full Tailwind radius scale is pinned to 3px below, so any `rounded-*`
+  utility (and the `.btn`/`.card`/`.field` helpers) renders at exactly 3px.
+*/
+
+@theme {
+  /* Brand palette */
+  --color-ink: #06060a;
+  --color-ink-2: #0b0b12;
+  --color-ink-3: #11111c;
+  --color-line: rgba(255, 255, 255, 0.09);
+  --color-blue: #45c6ff;
+  --color-blue-soft: #93dcff;
+  --color-pink: #ff4d9c;
+  --color-pink-soft: #ff8cc4;
+  --color-cream: #f4f7fb;
+  --color-muted: #969db2;
+
+  /* Type */
+  --font-display: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Radius — pinned to 3px everywhere */
+  --radius-xs: 3px;
+  --radius-sm: 3px;
+  --radius-md: 3px;
+  --radius-lg: 3px;
+  --radius-xl: 3px;
+  --radius-2xl: 3px;
+  --radius-3xl: 3px;
+  --radius-4xl: 3px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--color-pink);
+    color: #fff;
+  }
+
+  *:focus-visible {
+    outline: 2px solid var(--color-blue);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    line-height: 1.04;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-[3px] px-6 py-3.5
+           text-[0.95rem] font-semibold leading-none transition-all duration-200
+           select-none whitespace-nowrap;
+  }
+  .btn-primary {
+    color: #0a0410;
+    background-image: linear-gradient(100deg, var(--color-pink) 0%, var(--color-blue) 100%);
+    box-shadow: 0 10px 30px -10px rgba(255, 77, 156, 0.55), 0 6px 22px -12px rgba(69, 198, 255, 0.6);
+  }
+  .btn-primary:hover {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+    box-shadow: 0 16px 40px -12px rgba(255, 77, 156, 0.7), 0 10px 30px -14px rgba(69, 198, 255, 0.7);
+  }
+  .btn-ghost {
+    @apply border text-cream;
+    border-color: var(--color-line);
+    background: rgba(255, 255, 255, 0.02);
+  }
+  .btn-ghost:hover {
+    border-color: rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  /* Glass surface */
+  .card {
+    @apply rounded-[3px] border;
+    border-color: var(--color-line);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+    backdrop-filter: blur(10px);
+  }
+
+  /* Solid, high-contrast surface for the hero booking form */
+  .form-panel {
+    @apply relative overflow-hidden rounded-[3px] border;
+    border-color: rgba(255, 255, 255, 0.14);
+    background-color: #0c0c15;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0) 60%);
+    box-shadow:
+      0 34px 70px -24px rgba(0, 0, 0, 0.85),
+      0 1px 0 0 rgba(255, 255, 255, 0.06) inset;
+    backdrop-filter: blur(8px);
+  }
+  /* Thin brand accent across the top of the form */
+  .form-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 3px;
+    background-image: linear-gradient(100deg, var(--color-pink), var(--color-blue));
+  }
+
+  .field {
+    @apply w-full rounded-[3px] border px-3.5 py-3 text-[0.95rem] text-cream
+           transition-colors duration-150 outline-none;
+    border-color: var(--color-line);
+    background: rgba(255, 255, 255, 0.04);
+  }
+  .field::placeholder { color: rgba(255, 255, 255, 0.38); }
+  .field:focus {
+    border-color: var(--color-blue);
+    background: rgba(69, 198, 255, 0.06);
+  }
+  select.field option { color: #0b0b12; }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.22em];
+    color: var(--color-blue-soft);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background-image: linear-gradient(100deg, var(--color-pink-soft) 0%, var(--color-blue-soft) 95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .ring-line { box-shadow: inset 0 0 0 1px var(--color-line); }
+  .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    animation: reveal 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+}
+
+@keyframes reveal {
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { animation: none; opacity: 1; transform: none; }
+}
