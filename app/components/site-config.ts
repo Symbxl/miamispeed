@@ -19,8 +19,10 @@ export const site = {
   instagramUrl: "https://www.instagram.com/_miamispeedrentals",
 
   // Contact — leave empty to keep Instagram-only (matches the current bio).
-  phone: "", // e.g. "+1 (305) 555-0123"
-  email: "", // e.g. "book@miamispeedrentals.com"
+  // Typed as `string` (not the literal "") so the empty-state checks above
+  // narrow correctly once a real value is filled in.
+  phone: "" as string, // e.g. "+1 (305) 555-0123"
+  email: "" as string, // e.g. "book@miamispeedrentals.com"
 
   city: "Miami",
   region: "FL",
