@@ -39,7 +39,7 @@ export default function Hero() {
         />
         <div
           className="absolute -left-32 top-10 h-[40rem] w-[40rem] rounded-[3px] opacity-50 blur-[120px]"
-          style={{ background: "radial-gradient(circle, rgba(255,77,156,0.5), transparent 65%)" }}
+          style={{ background: "radial-gradient(circle, rgba(255,212,0,0.42), transparent 65%)" }}
         />
       </div>
 
@@ -48,18 +48,18 @@ export default function Hero() {
         <div className="reveal max-w-xl">
           <p className="eyebrow">
             <span className="inline-block h-1.5 w-1.5 rounded-[3px] bg-pink" />
-            All Things Miami · One Contact
+            Exotic &amp; Luxury Car Rentals · Miami
           </p>
 
           <h1 className="mt-4 text-[2.7rem] font-extrabold leading-[1.03] sm:text-6xl">
-            Rent the best of Miami.
-            <span className="block text-gradient">Slingshots, yachts &amp; more.</span>
+            Drive the car Miami
+            <span className="block text-gradient">never forgets.</span>
           </h1>
 
           <p className="mt-5 max-w-md text-lg leading-relaxed text-cream/80">
-            Polaris slingshots, luxury yachts, jet skis, jet cars and exotic
-            cars — your veteran-owned, one-stop concierge for Miami &amp;
-            Broward. Best prices, no tourist markup.
+            McLaren, Lamborghini, Mercedes-Maybach, Range Rover and the AMG G63
+            — your veteran-owned exotic car rental for Miami &amp; Broward.
+            Delivered to your hotel, Airbnb or the airport. No tourist markup.
           </p>
 
           <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2.5">
@@ -95,7 +95,7 @@ export default function Hero() {
             className="absolute -inset-5 -z-10 blur-[55px] opacity-70"
             style={{
               background:
-                "radial-gradient(60% 55% at 72% 18%, rgba(69,198,255,0.38), transparent 70%), radial-gradient(55% 55% at 22% 92%, rgba(255,77,156,0.34), transparent 70%)",
+                "radial-gradient(60% 55% at 72% 18%, rgba(255,212,0,0.34), transparent 70%), radial-gradient(55% 55% at 22% 92%, rgba(245,180,0,0.3), transparent 70%)",
             }}
           />
           <LeadForm />

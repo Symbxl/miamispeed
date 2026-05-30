@@ -56,7 +56,7 @@ export default function LeadForm({ compact = false }: { compact?: boolean }) {
         <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-[3px] bg-blue/15 text-blue">
           <Check className="h-6 w-6" />
         </div>
-        <h3 className="text-xl font-semibold">Request received 🌴</h3>
+        <h3 className="text-xl font-semibold">Request received 🔑</h3>
         <p className="mt-2 text-sm text-muted">
           We&apos;ll reply fast with availability and an all-in quote. For the
           quickest answer, slide into our DMs.
@@ -111,7 +111,7 @@ export default function LeadForm({ compact = false }: { compact?: boolean }) {
         <Field label="Email" htmlFor="lf-email" optional className={compact ? "sm:col-span-2" : ""}>
           <input id="lf-email" name="email" type="email" className="field" placeholder="you@email.com" autoComplete="email" />
         </Field>
-        <Field label="What to rent" htmlFor="lf-rental">
+        <Field label="Which car" htmlFor="lf-rental">
           <select id="lf-rental" name="rental" className="field" defaultValue="" required>
             <option value="" disabled>Choose…</option>
             {rentalOptions.map((o) => (
@@ -129,7 +129,7 @@ export default function LeadForm({ compact = false }: { compact?: boolean }) {
 
         {!compact && (
           <Field label="Anything else" htmlFor="lf-msg" optional className="sm:col-span-2">
-            <textarea id="lf-msg" name="message" rows={2} className="field resize-none" placeholder="Delivery to South Beach hotel, sunset charter…" />
+            <textarea id="lf-msg" name="message" rows={2} className="field resize-none" placeholder="Delivery to South Beach hotel, airport pickup…" />
           </Field>
         )}
       </div>

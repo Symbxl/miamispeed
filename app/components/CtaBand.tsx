@@ -9,8 +9,8 @@ export default function CtaBand() {
         <div className="relative overflow-hidden rounded-[3px] ring-line">
           <div className="absolute inset-0 -z-10">
             <Image
-              src="/images/yacht-2.jpg"
-              alt="Aerial view of a yacht on deep blue water"
+              src="/images/exotic-car-2.jpg"
+              alt="Exotic luxury sports car at night in Miami"
               fill
               sizes="(max-width: 1024px) 100vw, 1100px"
               className="object-cover"
@@ -19,18 +19,19 @@ export default function CtaBand() {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(110deg, rgba(6,6,10,0.95) 0%, rgba(6,6,10,0.82) 45%, rgba(255,77,156,0.28) 100%)",
+                  "linear-gradient(110deg, rgba(6,6,6,0.95) 0%, rgba(6,6,6,0.82) 45%, rgba(245,180,0,0.26) 100%)",
               }}
             />
           </div>
 
           <div className="px-7 py-16 sm:px-14 sm:py-20">
             <h2 className="max-w-2xl text-3xl font-extrabold sm:text-5xl">
-              Your Miami day is <span className="text-gradient">one text away.</span>
+              Your keys are <span className="text-gradient">one text away.</span>
             </h2>
             <p className="mt-4 max-w-lg text-lg text-cream/85">
               Send your dates and we&apos;ll send back availability and an all-in
-              price. Slingshots, yachts, jet skis and more — handled.
+              price — delivered to your door. McLaren, Maybach, Range Rover and
+              more.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a href="#quote" className="btn btn-primary text-base">

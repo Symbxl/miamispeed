@@ -21,8 +21,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
-              Veteran-owned, one-stop concierge for slingshots, yachts, jet skis
-              and exotic cars across Miami &amp; Broward.
+              Veteran-owned exotic &amp; luxury car rental — McLaren, Lamborghini,
+              Maybach, Range Rover and more, delivered across Miami &amp; Broward.
             </p>
             <a
               href={site.instagramUrl}

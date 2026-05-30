@@ -13,7 +13,7 @@ export default function WhyUs() {
           <div className="relative aspect-[4/5] overflow-hidden rounded-[3px] ring-line sm:aspect-[4/3] lg:aspect-[4/5]">
             <Image
               src="/images/miami-aerial.jpg"
-              alt="Miami skyline and causeway glowing pink at sunset"
+              alt="Miami skyline and causeway glowing at sunset"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -41,11 +41,12 @@ export default function WhyUs() {
         <div>
           <p className="eyebrow">Why Miami Speed Rentals</p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            The locals who make Miami <span className="text-gradient">effortless</span>
+            The locals who make exotic rentals <span className="text-gradient">effortless</span>
           </h2>
           <p className="mt-4 text-lg text-muted">
-            We&apos;re not a faceless booking site. We&apos;re a small,
-            veteran-run Miami crew that takes care of visitors like family.
+            We&apos;re not a faceless rental desk. We&apos;re a small,
+            veteran-run Miami crew that delivers clean, dialed-in cars and
+            treats every renter like family.
           </p>
 
           <div className="mt-8 grid gap-x-6 gap-y-7 sm:grid-cols-2">

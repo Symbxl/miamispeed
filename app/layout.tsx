@@ -17,7 +17,7 @@ const sans = Inter({
   display: "swap",
 });
 
-const title = "Miami Speed Rentals | Slingshots, Yachts, Jet Skis & Exotic Cars";
+const title = "Miami Speed Rentals | Exotic & Luxury Car Rental in Miami";
 const description = site.description;
 
 export const metadata: Metadata = {
@@ -29,16 +29,16 @@ export const metadata: Metadata = {
   description,
   applicationName: site.name,
   keywords: [
-    "Miami slingshot rental",
-    "Polaris slingshot Miami",
-    "yacht rental Miami",
-    "jet ski rental Miami",
     "exotic car rental Miami",
-    "jet car rental Miami",
-    "South Beach slingshot rental",
-    "Fort Lauderdale rentals",
-    "Miami concierge rentals",
-    "veteran owned rental Miami",
+    "luxury car rental Miami",
+    "McLaren rental Miami",
+    "Lamborghini rental Miami",
+    "Mercedes-Maybach rental Miami",
+    "Range Rover rental Miami",
+    "BMW X5 M rental Miami",
+    "G63 G-Wagon rental Miami",
+    "Fort Lauderdale exotic car rental",
+    "veteran owned car rental Miami",
   ],
   authors: [{ name: site.name }],
   creator: site.name,
@@ -63,11 +63,11 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
-  category: "travel",
+  category: "automotive",
 };
 
 export const viewport: Viewport = {
-  themeColor: "#06060a",
+  themeColor: "#060606",
   width: "device-width",
   initialScale: 1,
 };

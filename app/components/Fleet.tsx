@@ -9,11 +9,11 @@ export default function Fleet() {
         <header className="max-w-2xl">
           <p className="eyebrow">The Fleet</p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Everything Miami, <span className="text-gradient">under one roof</span>
+            Supercars &amp; luxury SUVs, <span className="text-gradient">hand-picked</span>
           </h2>
           <p className="mt-4 text-lg text-muted">
-            Stop juggling five vendors. From our signature slingshots to yachts
-            on the bay, it&apos;s one text and one trusted local crew.
+            From the McLaren 720S to the Range Rover Autobiography — a tight,
+            meticulously maintained fleet, delivered anywhere in Miami.
           </p>
         </header>
 

@@ -14,7 +14,7 @@ export default function StructuredData() {
       name: site.name,
       description: site.description,
       url: site.url,
-      image: `${site.url}/images/slingshot.jpg`,
+      image: `${site.url}/images/mclaren-720s.jpg`,
       slogan: site.tagline,
       sameAs: [site.instagramUrl],
       areaServed: site.areaServed.map((name) => ({ "@type": "City", name })),

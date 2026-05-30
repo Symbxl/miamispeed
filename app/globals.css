@@ -2,23 +2,28 @@
 
 /*
   Miami Speed Rentals — design system
-  Palette: black / light blue / pink. Every corner is a flat 3px radius:
+  Palette: black / white / yellow-gold. Every corner is a flat 3px radius:
   the full Tailwind radius scale is pinned to 3px below, so any `rounded-*`
   utility (and the `.btn`/`.card`/`.field` helpers) renders at exactly 3px.
+
+  Note: the accent tokens are still named `--color-blue*` / `--color-pink*`
+  for backwards-compat with the many `text-blue` / `text-pink` utilities in
+  the components, but both now map into the gold range — `blue` = bright
+  yellow (primary), `pink` = deep gold (the gradient partner).
 */
 
 @theme {
-  /* Brand palette */
-  --color-ink: #06060a;
-  --color-ink-2: #0b0b12;
-  --color-ink-3: #11111c;
+  /* Brand palette — black, white & yellow-gold */
+  --color-ink: #060606;
+  --color-ink-2: #0c0c0c;
+  --color-ink-3: #141414;
   --color-line: rgba(255, 255, 255, 0.09);
-  --color-blue: #45c6ff;
-  --color-blue-soft: #93dcff;
-  --color-pink: #ff4d9c;
-  --color-pink-soft: #ff8cc4;
-  --color-cream: #f4f7fb;
-  --color-muted: #969db2;
+  --color-blue: #ffd400;
+  --color-blue-soft: #ffe680;
+  --color-pink: #f5b400;
+  --color-pink-soft: #ffd45e;
+  --color-cream: #f6f6f7;
+  --color-muted: #9a9a9f;
 
   /* Type */
   --font-display: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
@@ -52,8 +57,8 @@
   }
 
   ::selection {
-    background: var(--color-pink);
-    color: #fff;
+    background: var(--color-blue);
+    color: #060606;
   }
 
   *:focus-visible {
@@ -76,14 +81,14 @@
            select-none whitespace-nowrap;
   }
   .btn-primary {
-    color: #0a0410;
+    color: #0a0a0a;
     background-image: linear-gradient(100deg, var(--color-pink) 0%, var(--color-blue) 100%);
-    box-shadow: 0 10px 30px -10px rgba(255, 77, 156, 0.55), 0 6px 22px -12px rgba(69, 198, 255, 0.6);
+    box-shadow: 0 10px 30px -10px rgba(245, 180, 0, 0.5), 0 6px 22px -12px rgba(255, 212, 0, 0.55);
   }
   .btn-primary:hover {
     filter: brightness(1.06);
     transform: translateY(-1px);
-    box-shadow: 0 16px 40px -12px rgba(255, 77, 156, 0.7), 0 10px 30px -14px rgba(69, 198, 255, 0.7);
+    box-shadow: 0 16px 40px -12px rgba(245, 180, 0, 0.65), 0 10px 30px -14px rgba(255, 212, 0, 0.65);
   }
   .btn-ghost {
     @apply border text-cream;
@@ -132,9 +137,9 @@
   .field::placeholder { color: rgba(255, 255, 255, 0.38); }
   .field:focus {
     border-color: var(--color-blue);
-    background: rgba(69, 198, 255, 0.06);
+    background: rgba(255, 212, 0, 0.07);
   }
-  select.field option { color: #0b0b12; }
+  select.field option { color: #0b0b0b; }
 
   .eyebrow {
     @apply inline-flex items-center gap-2 text-[0.72rem] font-semibold uppercase tracking-[0.22em];

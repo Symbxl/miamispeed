@@ -10,7 +10,7 @@ export default function ServiceArea() {
           <div className="absolute inset-0 -z-10">
             <Image
               src="/images/miami-skyline.jpg"
-              alt="Miami skyline at dusk under a pink sky"
+              alt="Miami skyline at dusk"
               fill
               sizes="(max-width: 1024px) 100vw, 1100px"
               className="object-cover"
@@ -34,8 +34,8 @@ export default function ServiceArea() {
             </h2>
             <p className="mt-4 max-w-xl text-lg text-cream/80">
               From South Beach to Fort Lauderdale, we deliver to hotels, Airbnbs
-              and marinas across the service area. Tell us where you&apos;re
-              staying and we&apos;ll make it work.
+              and the airport across the service area. Tell us where you&apos;re
+              staying and your car is there.
             </p>
 
             <ul className="mt-7 flex flex-wrap gap-2.5">

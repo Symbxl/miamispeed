@@ -34,7 +34,7 @@ export default function Header() {
         <a href="#top" className="flex items-center gap-2.5" aria-label={`${site.name} home`}>
           <Logo />
           <span className="text-[0.95rem] font-bold leading-none tracking-tight">
-            Miami<span className="text-gradient"> Speed</span> Rentals
+            Timeless<span className="text-gradient"> Auto</span>
           </span>
         </a>
 
@@ -108,7 +108,7 @@ function Logo() {
       }}
       aria-hidden="true"
     >
-      MS
+      TA
     </span>
   );
 }

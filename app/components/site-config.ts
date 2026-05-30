@@ -9,36 +9,36 @@
  */
 
 export const site = {
-  name: "Miami Speed Rentals",
-  tagline: "All Things Miami",
+  name: "Timeless Autogroup",
+  tagline: "Drive the Extraordinary",
   // Placeholder production domain — swap for the real one before launch.
-  url: "https://miamispeedrentals.com",
+  url: "https://timelessautogroup.com",
   description:
-    "Miami Speed Rentals is a veteran-owned, one-stop concierge for renting Polaris slingshots, luxury yachts, jet skis, exotic cars and jet cars across Miami and Broward. One text and we handle the rest.",
-  instagramHandle: "_miamispeedrentals",
-  instagramUrl: "https://www.instagram.com/_miamispeedrentals",
+    "Timeless Autogroup is New York City's concierge exotic and luxury car rental — Lamborghini, Ferrari, McLaren, Porsche and more, fully insured and delivered across NYC and the Tri-State. One text and the keys are yours.",
+  instagramHandle: "timelessautogroup",
+  instagramUrl: "https://www.instagram.com/timelessautogroup",
 
   // Contact — leave empty to keep Instagram-only (matches the current bio).
   // Typed as `string` (not the literal "") so the empty-state checks above
   // narrow correctly once a real value is filled in.
-  phone: "" as string, // e.g. "+1 (305) 555-0123"
-  email: "" as string, // e.g. "book@miamispeedrentals.com"
+  phone: "" as string, // e.g. "+1 (212) 555-0123"
+  email: "" as string, // e.g. "book@timelessautogroup.com"
 
-  city: "Miami",
-  region: "FL",
-  regionName: "Florida",
+  city: "New York",
+  region: "NY",
+  regionName: "New York",
   country: "US",
 
   areaServed: [
-    "Miami",
-    "Miami Beach",
-    "South Beach",
-    "Brickell",
-    "Wynwood",
-    "Downtown Miami",
-    "Kendall",
-    "Fort Lauderdale",
-    "Broward County",
+    "Manhattan",
+    "Brooklyn",
+    "Queens",
+    "The Bronx",
+    "Staten Island",
+    "Long Island",
+    "Westchester",
+    "New Jersey",
+    "The Hamptons",
   ],
 
   hoursNote: "Open 7 days · By appointment · DM anytime",
@@ -56,158 +56,158 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "slingshots",
-    name: "Polaris Slingshots",
-    short: "Our signature 3-wheel ride",
+    slug: "supercars",
+    name: "Supercars",
+    short: "The headliners",
     blurb:
-      "The Miami Speed Rentals signature. Turn every street into a show in a Polaris Slingshot — open-air, head-turning and built for the causeway. Multiple colors available.",
-    image: "/images/slingshot.jpg",
+      "The cars that stop traffic. Lamborghini, Ferrari and McLaren — meticulously maintained and detailed for the moment you've been picturing. Pull up like the main event.",
+    image: "/images/exotic-car-2.jpg",
     imageAlt:
-      "Red Polaris Slingshot parked in front of a colorful Wynwood mural in Miami",
-    features: ["Multiple colors", "Easy to drive", "Unlimited miles", "Delivery available"],
+      "Silver Lamborghini Huracán photographed head-on inside a showroom",
+    features: ["Lamborghini & Ferrari", "McLaren & more", "Daily & weekly", "Delivery available"],
   },
   {
-    slug: "yachts",
-    name: "Luxury Yachts",
-    short: "Day charters on the bay",
+    slug: "luxury-sedans",
+    name: "Luxury Sedans",
+    short: "Executive presence",
     blurb:
-      "Step aboard for a private day on Biscayne Bay. Captained luxury yacht charters for birthdays, proposals, bachelor/bachelorette trips and corporate days out.",
-    image: "/images/yacht.jpg",
-    imageAlt: "Large luxury motor yacht cruising on open blue water",
-    features: ["Captain included", "Custom routes", "Onboard hosting", "Sunset charters"],
-  },
-  {
-    slug: "jet-skis",
-    name: "Jet Skis",
-    short: "Best prices on the water",
-    blurb:
-      "Hit the water on late-model jet skis with the best prices in Miami. Singles or groups, hourly or all day — life vests and a quick briefing included.",
-    image: "/images/jetski.jpg",
-    imageAlt: "Rider catching air on a yellow jet ski over open water",
-    features: ["Hourly & daily", "Groups welcome", "Gear included", "Best price guarantee"],
-  },
-  {
-    slug: "exotic-cars",
-    name: "Exotic & Luxury Cars",
-    short: "Arrive like a local legend",
-    blurb:
-      "Roll up in something unforgettable. A curated line of exotic and luxury cars for events, shoots, weddings and weekends — chosen to match the moment.",
+      "Arrive composed. Porsche Panamera, BMW M5 and the Audi RS line — four doors of understated power for business, dinner or a night across the city.",
     image: "/images/exotic-car.jpg",
-    imageAlt: "Blacked-out luxury sports car in motion at dusk with glowing taillights",
-    features: ["Daily & weekly", "Event & photo shoots", "Delivery available", "Hand-picked fleet"],
+    imageAlt: "Black Porsche Panamera Turbo in motion on a highway at dusk",
+    features: ["Porsche & BMW M", "Audi RS line", "Business & events", "Chauffeur optional"],
   },
   {
-    slug: "jet-cars",
-    name: "Jet Cars",
-    short: "The viral water toy",
+    slug: "sport-coupes",
+    name: "Sport Coupes",
+    short: "Carve the city",
     blurb:
-      "The thing everyone films. Jet cars are the wildest way to ride the bay — half watercraft, half spectacle. A Miami Speed Rentals favorite for content and adrenaline.",
-    image: "/images/jetski-2.jpg",
-    imageAlt: "Two riders speeding across the water throwing a wall of spray",
-    features: ["Guided sessions", "Unreal for content", "Beginner friendly", "Group rates"],
+      "Two doors, all attitude. BMW M, Mercedes-AMG GT and Audi RS coupes built for the drive — quick on the West Side Highway, unforgettable on the FDR.",
+    image: "/images/coupe.jpg",
+    imageAlt: "Grey BMW M4 coupe parked at golden hour with fog in the distance",
+    features: ["BMW M & AMG GT", "Audi RS5", "Hourly & daily", "Unlimited-mile options"],
   },
   {
-    slug: "concierge",
-    name: "VIP Concierge",
-    short: "You name it, we have it",
+    slug: "american-muscle",
+    name: "American Muscle",
+    short: "Loud & proud",
     blurb:
-      "Planning the whole trip? We handle the rest — Airbnbs, transport, tables and the lineup of toys above. One contact for your entire Miami itinerary.",
-    image: "/images/miami-beach.jpg",
-    imageAlt: "Aerial view of Biscayne Bay with yachts and the Miami skyline",
-    features: ["Airbnb & stays", "Full itineraries", "Out-of-town clients", "One point of contact"],
+      "Big power, bigger sound. Shelby Mustang, Camaro ZL1 and Corvette for when you want the drive felt as much as seen. A crowd favorite for content.",
+    image: "/images/muscle.jpg",
+    imageAlt: "Dark Shelby Mustang photographed head-on under moody light",
+    features: ["Shelby & Camaro", "Corvette", "Great for content", "Group rates"],
+  },
+  {
+    slug: "jdm-track",
+    name: "JDM & Track",
+    short: "Cult legends",
+    blurb:
+      "The icons enthusiasts actually want. Nissan GT-R, Supra and track-focused 911s — engineered for the apex and built to be driven.",
+    image: "/images/jdm.jpg",
+    imageAlt: "Silver Nissan GT-R on an open road heading into the sunset",
+    features: ["Nissan GT-R", "Supra & 911", "Enthusiast favorites", "Track-ready setups"],
+  },
+  {
+    slug: "vip-chauffeur",
+    name: "VIP Chauffeur",
+    short: "You ride, we drive",
+    blurb:
+      "Want the experience without the wheel? Book any car with a professional chauffeur for proms, proposals, nights out and airport runs across the city.",
+    image: "/images/chauffeur.jpg",
+    imageAlt: "New York City skyline and the Williamsburg Bridge lit up at night",
+    features: ["Pro chauffeur", "Airport transfers", "Events & nights out", "Any car in the fleet"],
   },
 ];
 
 export const stats = [
-  { value: "All Things", label: "Miami, one contact" },
-  { value: "Veteran", label: "owned & operated" },
+  { value: "Exotic", label: "& luxury, one garage" },
+  { value: "Insured", label: "& concierge delivered" },
   { value: "7 days", label: "a week, by appointment" },
-  { value: "Miami + Broward", label: "delivery available" },
+  { value: "NYC + Tri-State", label: "delivery available" },
 ];
 
 export const whyUs = [
   {
-    title: "Veteran-owned & operated",
-    body: "Discipline, accountability and respect — a business run with the standards you'd expect from those who served.",
+    title: "Fully insured & transparent",
+    body: "Every rental is fully insured with clear, all-in pricing. We walk you through coverage and deposit up front — no fees sprung on you at pickup.",
   },
   {
-    title: "Truly one-stop",
-    body: "Slingshots, yachts, jet skis, exotic cars and stays. Stop juggling five vendors — text us once and it's handled.",
+    title: "A hand-picked fleet",
+    body: "Lamborghini, Ferrari, McLaren, Porsche and more — meticulously maintained and detailed before every single drive.",
   },
   {
-    title: "Best prices, guaranteed",
-    body: "Local rates with no tourist markup. Fair, upfront pricing on everything we rent across Miami and Broward.",
+    title: "Concierge delivery citywide",
+    body: "We bring the car to your door, hotel, office or the airport anywhere in NYC and the Tri-State. Keys in hand, you just drive.",
   },
   {
-    title: "Built for visitors",
-    body: "Flying in from out of state or abroad? We coordinate delivery, timing and logistics so you just show up and ride.",
+    title: "Built for the moment",
+    body: "Weddings, shoots, birthdays or a weekend away — we match the right car to the occasion and handle the timing for you.",
   },
 ];
 
 export const steps = [
   {
     n: "01",
-    title: "Tell us your dates",
-    body: "Send the quick form or DM us what you want, when, and how many people. Takes a minute.",
+    title: "Tell us the car & dates",
+    body: "Send the quick form or DM us the car you want, your dates and where you're driving. Takes a minute.",
   },
   {
     n: "02",
     title: "Get your custom quote",
-    body: "We confirm availability and send a clear, all-in quote — no surprises, no tourist markup.",
+    body: "We confirm availability and send a clear, all-in quote — insurance and delivery included, no surprises.",
   },
   {
     n: "03",
-    title: "Show up & ride",
-    body: "Meet us or we deliver. Quick briefing, keys in hand, and your Miami day is on.",
+    title: "Get the keys",
+    body: "Meet us or we deliver to your door. Quick walkaround, keys in hand, and the city is yours.",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Flew in from New York and they had us fully set for the weekend. Easy from the first text — we'll only rent with them.",
-    origin: "Visiting from New York",
+      "Booked a Lamborghini for our anniversary and they delivered it right to our hotel in Midtown. Flawless from the very first text.",
+    origin: "Manhattan",
   },
   {
     quote:
-      "Came all the way from Arizona and trusted them with everything. Smooth, professional and exactly what they promised.",
-    origin: "Out-of-state client",
+      "Needed a McLaren for a video shoot on two days' notice — Timeless made it happen and the car showed up spotless.",
+    origin: "Brooklyn shoot",
   },
   {
     quote:
-      "International clients and they treated us like VIPs. Slingshots, the bay, the whole itinerary — one contact handled it all.",
-    origin: "International client",
+      "Rented a Porsche for a weekend upstate. Fair price, fully insured, zero hassle. They're my go-to in the city now.",
+    origin: "Weekend in NY",
   },
 ];
 
 export const faqs = [
   {
-    q: "What can I rent from Miami Speed Rentals?",
-    a: "We're a one-stop Miami concierge: Polaris slingshots, luxury yachts, jet skis, exotic and luxury cars, jet cars, plus Airbnbs and full trip planning. If it's a 'Miami experience,' we can usually arrange it.",
+    q: "What kind of cars can I rent from Timeless Autogroup?",
+    a: "Our fleet spans supercars and exotics (Lamborghini, Ferrari, McLaren), luxury sedans (Porsche, BMW M, Audi RS), sport coupes, American muscle and JDM icons — plus VIP chauffeur service. If you have a dream car in mind, just ask.",
   },
   {
     q: "What areas do you serve?",
-    a: "All of Miami and Broward County — including Miami Beach, South Beach, Brickell, Wynwood, Downtown, Kendall and Fort Lauderdale. Delivery is available across the service area.",
+    a: "All five boroughs of New York City — Manhattan, Brooklyn, Queens, the Bronx and Staten Island — plus Long Island, Westchester, New Jersey and the Hamptons. Delivery is available across the Tri-State area.",
   },
   {
     q: "How do I book?",
-    a: "Send the quote form on this page or DM us on Instagram @_miamispeedrentals with your dates and group size. We confirm availability and send an all-in quote, then you're set.",
+    a: "Send the quote form on this page or DM us on Instagram @timelessautogroup with the car, your dates and where you'll be driving. We confirm availability and send an all-in quote, then you're set.",
   },
   {
-    q: "Do you offer delivery?",
-    a: "Yes. For most rentals we can deliver to your hotel, Airbnb or marina within the Miami–Broward area so you don't have to coordinate pickup.",
+    q: "Do you deliver the car?",
+    a: "Yes. We can deliver to your home, hotel, office or the airport anywhere in NYC and the Tri-State, so you never have to coordinate pickup.",
   },
   {
-    q: "Are you good for out-of-town and international visitors?",
-    a: "Absolutely — a big share of our clients fly in from out of state and abroad. We coordinate timing, delivery and logistics so visitors can just show up and enjoy Miami.",
+    q: "What do I need to rent an exotic car?",
+    a: "Generally a valid driver's license, meeting the minimum age, and a refundable security deposit. Most exotics require renters to be 25+, though some cars are available at 21+. We confirm the exact requirements in your quote before you book.",
   },
   {
-    q: "What do I need to rent a slingshot or car?",
-    a: "Generally a valid driver's license, meeting the minimum age, and a refundable deposit. Exact requirements depend on the vehicle — we'll confirm everything in your quote before you book.",
+    q: "Do you offer insurance?",
+    a: "Yes — we'll walk you through insurance and the security deposit up front so there are no surprises. Bring a valid license and you're set to drive.",
   },
   {
-    q: "Is Miami Speed Rentals really veteran-owned?",
-    a: "Yes. Miami Speed Rentals is proudly veteran-owned and operated, and we run the business with the standards and accountability that come with it.",
+    q: "Can I rent for a photoshoot, wedding or event?",
+    a: "Absolutely — a big share of our clients book for weddings, music videos, photoshoots and birthdays. We coordinate the timing, delivery and the right car so your day goes off without a hitch.",
   },
 ];
 
