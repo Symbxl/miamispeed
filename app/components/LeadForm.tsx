@@ -93,7 +93,7 @@ export default function LeadForm({ compact = false }: { compact?: boolean }) {
           id="quote-form-title"
           className="mt-2 text-2xl font-bold tracking-tight"
         >
-          Lock in your Miami ride
+          Lock in your dream car
         </h2>
         <p className="mt-1 text-sm text-muted">
           Tell us what and when — we reply with a clear price, fast.
@@ -105,7 +105,7 @@ export default function LeadForm({ compact = false }: { compact?: boolean }) {
           <input id="lf-name" name="name" className="field" placeholder="Your name" autoComplete="name" required />
         </Field>
         <Field label="Phone / WhatsApp" htmlFor="lf-phone">
-          <input id="lf-phone" name="phone" type="tel" className="field" placeholder="(305) 000-0000" autoComplete="tel" required />
+          <input id="lf-phone" name="phone" type="tel" className="field" placeholder="(212) 000-0000" autoComplete="tel" required />
         </Field>
 
         <Field label="Email" htmlFor="lf-email" optional className={compact ? "sm:col-span-2" : ""}>
@@ -129,7 +129,7 @@ export default function LeadForm({ compact = false }: { compact?: boolean }) {
 
         {!compact && (
           <Field label="Anything else" htmlFor="lf-msg" optional className="sm:col-span-2">
-            <textarea id="lf-msg" name="message" rows={2} className="field resize-none" placeholder="Delivery to South Beach hotel, airport pickup…" />
+            <textarea id="lf-msg" name="message" rows={2} className="field resize-none" placeholder="Delivery to a Midtown hotel, weekend in the Hamptons…" />
           </Field>
         )}
       </div>
@@ -157,7 +157,7 @@ export default function LeadForm({ compact = false }: { compact?: boolean }) {
         {status !== "submitting" && <ArrowRight className="h-[18px] w-[18px]" />}
       </button>
       <p className="mt-3 text-center text-xs text-muted">
-        Veteran-owned · We never share your info · Reply usually same day
+        Fully insured · We never share your info · Reply usually same day
       </p>
     </form>
   );

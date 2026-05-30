@@ -9,8 +9,8 @@ export default function CtaBand() {
         <div className="relative overflow-hidden rounded-[3px] ring-line">
           <div className="absolute inset-0 -z-10">
             <Image
-              src="/images/exotic-car-2.jpg"
-              alt="Exotic luxury sports car at night in Miami"
+              src="/images/cta.jpg"
+              alt="Red Ferrari LaFerrari on display in a showroom"
               fill
               sizes="(max-width: 1024px) 100vw, 1100px"
               className="object-cover"
@@ -30,8 +30,8 @@ export default function CtaBand() {
             </h2>
             <p className="mt-4 max-w-lg text-lg text-cream/85">
               Send your dates and we&apos;ll send back availability and an all-in
-              price — delivered to your door. McLaren, Maybach, Range Rover and
-              more.
+              price — insurance and delivery included. Supercars, sedans, coupes
+              and chauffeur service.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a href="#quote" className="btn btn-primary text-base">

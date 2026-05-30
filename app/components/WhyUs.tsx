@@ -12,8 +12,8 @@ export default function WhyUs() {
         <div className="relative order-last lg:order-first">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[3px] ring-line sm:aspect-[4/3] lg:aspect-[4/5]">
             <Image
-              src="/images/miami-aerial.jpg"
-              alt="Miami skyline and causeway glowing at sunset"
+              src="/images/garage.jpg"
+              alt="Exotic cars parked under low light in a private garage"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"
@@ -32,21 +32,21 @@ export default function WhyUs() {
               <ShieldCheck className="h-6 w-6" />
             </span>
             <p className="text-sm font-medium leading-snug">
-              Proudly <span className="text-gradient font-bold">veteran-owned</span> &amp; operated in Miami
+              Fully insured &amp; <span className="text-gradient font-bold">concierge delivered</span> across NYC
             </p>
           </div>
         </div>
 
         {/* Copy */}
         <div>
-          <p className="eyebrow">Why Miami Speed Rentals</p>
+          <p className="eyebrow">Why Timeless Autogroup</p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            The locals who make exotic rentals <span className="text-gradient">effortless</span>
+            The team that makes exotics <span className="text-gradient">effortless</span>
           </h2>
           <p className="mt-4 text-lg text-muted">
-            We&apos;re not a faceless rental desk. We&apos;re a small,
-            veteran-run Miami crew that delivers clean, dialed-in cars and
-            treats every renter like family.
+            We&apos;re not a faceless rental desk. We&apos;re a small NYC crew
+            obsessed with cars — we deliver clean, dialed-in machines and treat
+            every client, and every car, like our own.
           </p>
 
           <div className="mt-8 grid gap-x-6 gap-y-7 sm:grid-cols-2">

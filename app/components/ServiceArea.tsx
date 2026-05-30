@@ -9,8 +9,8 @@ export default function ServiceArea() {
         <div className="card relative overflow-hidden">
           <div className="absolute inset-0 -z-10">
             <Image
-              src="/images/miami-skyline.jpg"
-              alt="Miami skyline at dusk"
+              src="/images/nyc-skyline.jpg"
+              alt="New York City skyline at sunset"
               fill
               sizes="(max-width: 1024px) 100vw, 1100px"
               className="object-cover"
@@ -30,12 +30,12 @@ export default function ServiceArea() {
               Service Area
             </p>
             <h2 className="mt-3 max-w-xl text-3xl font-bold sm:text-4xl">
-              Serving all of <span className="text-gradient">Miami &amp; Broward</span>
+              Serving all of <span className="text-gradient">New York &amp; the Tri-State</span>
             </h2>
             <p className="mt-4 max-w-xl text-lg text-cream/80">
-              From South Beach to Fort Lauderdale, we deliver to hotels, Airbnbs
-              and the airport across the service area. Tell us where you&apos;re
-              staying and your car is there.
+              From Manhattan to Montauk, we deliver to homes, hotels, offices
+              and airports across the area. Tell us where you&apos;ll be and your
+              car is there.
             </p>
 
             <ul className="mt-7 flex flex-wrap gap-2.5">

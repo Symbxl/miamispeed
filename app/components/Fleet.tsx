@@ -9,11 +9,11 @@ export default function Fleet() {
         <header className="max-w-2xl">
           <p className="eyebrow">The Fleet</p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Supercars &amp; luxury SUVs, <span className="text-gradient">hand-picked</span>
+            Supercars to chauffeur, <span className="text-gradient">one garage</span>
           </h2>
           <p className="mt-4 text-lg text-muted">
-            From the McLaren 720S to the Range Rover Autobiography — a tight,
-            meticulously maintained fleet, delivered anywhere in Miami.
+            From a Lamborghini for the weekend to a chauffeured night out — a
+            tight, meticulously maintained fleet, delivered anywhere in NYC.
           </p>
         </header>
 

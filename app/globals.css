@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /*
-  Miami Speed Rentals — design system
+  Timeless Autogroup — design system
   Palette: black / white / yellow-gold. Every corner is a flat 3px radius:
   the full Tailwind radius scale is pinned to 3px below, so any `rounded-*`
   utility (and the `.btn`/`.card`/`.field` helpers) renders at exactly 3px.

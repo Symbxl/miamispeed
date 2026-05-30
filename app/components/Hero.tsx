@@ -4,9 +4,9 @@ import { site } from "./site-config";
 import { Instagram, ShieldCheck, Star, MapPin } from "./icons";
 
 const badges = [
-  { icon: ShieldCheck, text: "Veteran-owned" },
+  { icon: ShieldCheck, text: "Fully insured" },
   { icon: Star, text: "Verified on Instagram" },
-  { icon: MapPin, text: "Miami + Broward" },
+  { icon: MapPin, text: "NYC + Tri-State" },
 ];
 
 export default function Hero() {
@@ -15,8 +15,8 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/miami-night.jpg"
-          alt="Neon-lit Art Deco street in Miami Beach at night"
+          src="/images/hero.jpg"
+          alt="White Bugatti Chiron on a New York City street at night"
           fill
           priority
           sizes="100vw"
@@ -48,18 +48,18 @@ export default function Hero() {
         <div className="reveal max-w-xl">
           <p className="eyebrow">
             <span className="inline-block h-1.5 w-1.5 rounded-[3px] bg-pink" />
-            Exotic &amp; Luxury Car Rentals · Miami
+            Exotic &amp; Luxury Car Rental · New York City
           </p>
 
           <h1 className="mt-4 text-[2.7rem] font-extrabold leading-[1.03] sm:text-6xl">
-            Drive the car Miami
-            <span className="block text-gradient">never forgets.</span>
+            The keys to New York&apos;s
+            <span className="block text-gradient">most wanted cars.</span>
           </h1>
 
           <p className="mt-5 max-w-md text-lg leading-relaxed text-cream/80">
-            McLaren, Lamborghini, Mercedes-Maybach, Range Rover and the AMG G63
-            — your veteran-owned exotic car rental for Miami &amp; Broward.
-            Delivered to your hotel, Airbnb or the airport. No tourist markup.
+            Lamborghini, Ferrari, McLaren, Porsche and more — your concierge
+            exotic car rental for NYC &amp; the Tri-State. Fully insured and
+            delivered to your door. No surprises.
           </p>
 
           <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2.5">

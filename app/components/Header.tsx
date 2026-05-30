@@ -34,7 +34,7 @@ export default function Header() {
         <a href="#top" className="flex items-center gap-2.5" aria-label={`${site.name} home`}>
           <Logo />
           <span className="text-[0.95rem] font-bold leading-none tracking-tight">
-            Timeless<span className="text-gradient"> Auto</span>
+            Timeless<span className="text-gradient"> Auto</span>group
           </span>
         </a>
 

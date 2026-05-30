@@ -17,28 +17,28 @@ const sans = Inter({
   display: "swap",
 });
 
-const title = "Miami Speed Rentals | Exotic & Luxury Car Rental in Miami";
+const title = "Timeless Autogroup | Exotic & Luxury Car Rental in NYC";
 const description = site.description;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
     default: title,
-    template: "%s | Miami Speed Rentals",
+    template: "%s | Timeless Autogroup",
   },
   description,
   applicationName: site.name,
   keywords: [
-    "exotic car rental Miami",
-    "luxury car rental Miami",
-    "McLaren rental Miami",
-    "Lamborghini rental Miami",
-    "Mercedes-Maybach rental Miami",
-    "Range Rover rental Miami",
-    "BMW X5 M rental Miami",
-    "G63 G-Wagon rental Miami",
-    "Fort Lauderdale exotic car rental",
-    "veteran owned car rental Miami",
+    "exotic car rental NYC",
+    "luxury car rental New York",
+    "Lamborghini rental NYC",
+    "Ferrari rental New York",
+    "McLaren rental NYC",
+    "Porsche rental Manhattan",
+    "exotic car rental Brooklyn",
+    "supercar rental New York City",
+    "chauffeur service NYC",
+    "Tri-State exotic car rental",
   ],
   authors: [{ name: site.name }],
   creator: site.name,
@@ -50,13 +50,13 @@ export const metadata: Metadata = {
     siteName: site.name,
     title,
     description,
-    images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: site.name }],
+    images: [{ url: "/images/hero.jpg", width: 1200, height: 630, alt: site.name }],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
-    images: ["/opengraph-image"],
+    images: ["/images/hero.jpg"],
   },
   robots: {
     index: true,

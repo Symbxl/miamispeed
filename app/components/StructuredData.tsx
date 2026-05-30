@@ -4,17 +4,17 @@ import { faqs, services, site } from "./site-config";
  * JSON-LD structured data. This is the backbone of both classic SEO and
  * "LLM SEO": it states the business entity, what it rents, where it serves
  * and answers common questions in a machine-readable graph so search engines
- * and AI assistants can describe Miami Speed Rentals accurately.
+ * and AI assistants can describe Timeless Autogroup accurately.
  */
 export default function StructuredData() {
   const graph: Record<string, unknown>[] = [
     {
-      "@type": ["LocalBusiness", "AutomotiveBusiness"],
+      "@type": ["AutoRental", "LocalBusiness"],
       "@id": `${site.url}/#business`,
       name: site.name,
       description: site.description,
       url: site.url,
-      image: `${site.url}/images/mclaren-720s.jpg`,
+      image: `${site.url}/images/hero.jpg`,
       slogan: site.tagline,
       sameAs: [site.instagramUrl],
       areaServed: site.areaServed.map((name) => ({ "@type": "City", name })),
@@ -29,7 +29,7 @@ export default function StructuredData() {
       knowsAbout: services.map((s) => s.name),
       hasOfferCatalog: {
         "@type": "OfferCatalog",
-        name: "Miami Speed Rentals Fleet",
+        name: `${site.name} Fleet`,
         itemListElement: services.map((s) => ({
           "@type": "Offer",
           itemOffered: {

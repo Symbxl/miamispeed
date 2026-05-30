@@ -58,7 +58,7 @@ export async function POST(request: Request) {
   };
 
   // Always record it server-side so nothing is lost before email is wired up.
-  console.log("[miami-speed-rentals] New lead:", lead);
+  console.log("[timeless-autogroup] New lead:", lead);
 
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.LEAD_TO_EMAIL;
@@ -67,7 +67,7 @@ export async function POST(request: Request) {
       await sendEmail(apiKey, to, lead);
     } catch (err) {
       // Don't fail the user's submission if email delivery hiccups.
-      console.error("[miami-speed-rentals] Email send failed:", err);
+      console.error("[timeless-autogroup] Email send failed:", err);
     }
   }
 
@@ -79,7 +79,7 @@ async function sendEmail(
   to: string,
   lead: Record<string, string>,
 ) {
-  const from = process.env.LEAD_FROM_EMAIL || "Miami Speed Rentals <onboarding@resend.dev>";
+  const from = process.env.LEAD_FROM_EMAIL || "Timeless Autogroup <onboarding@resend.dev>";
   const rows = Object.entries(lead)
     .filter(([, v]) => v)
     .map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0;color:#888;text-transform:capitalize">${k}</td><td style="padding:4px 0"><b>${escapeHtml(v)}</b></td></tr>`)

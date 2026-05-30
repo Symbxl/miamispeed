@@ -14,15 +14,15 @@ export default function Footer() {
                 className="grid h-9 w-9 place-items-center rounded-[3px] text-sm font-black text-ink"
                 style={{ backgroundImage: "linear-gradient(135deg, var(--color-pink), var(--color-blue))" }}
               >
-                MS
+                TA
               </span>
               <span className="text-[0.95rem] font-bold tracking-tight">
-                Miami<span className="text-gradient"> Speed</span> Rentals
+                Timeless<span className="text-gradient"> Auto</span>group
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
-              Veteran-owned exotic &amp; luxury car rental — McLaren, Lamborghini,
-              Maybach, Range Rover and more, delivered across Miami &amp; Broward.
+              Concierge exotic &amp; luxury car rental — Lamborghini, Ferrari,
+              McLaren, Porsche and more, delivered across NYC &amp; the Tri-State.
             </p>
             <a
               href={site.instagramUrl}
@@ -69,7 +69,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-muted">
               <li className="flex items-start gap-2.5">
                 <MapPin className="mt-0.5 h-[18px] w-[18px] shrink-0 text-blue" />
-                {site.city}, {site.region} · Miami &amp; Broward
+                {site.city}, {site.region} · NYC &amp; Tri-State
               </li>
               <li className="flex items-start gap-2.5">
                 <Clock className="mt-0.5 h-[18px] w-[18px] shrink-0 text-blue" />
@@ -93,8 +93,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-line pt-7 text-xs text-muted sm:flex-row">
-          <p>© {year} {site.name}. All rights reserved. Proudly veteran-owned.</p>
-          <p>Miami · Miami Beach · Brickell · Wynwood · Fort Lauderdale</p>
+          <p>© {year} {site.name}. All rights reserved. Fully insured · Concierge delivery.</p>
+          <p>Manhattan · Brooklyn · Queens · Long Island · The Hamptons</p>
         </div>
       </div>
     </footer>

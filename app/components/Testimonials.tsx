@@ -6,13 +6,13 @@ export default function Testimonials() {
     <section className="relative py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <header className="max-w-2xl">
-          <p className="eyebrow">Renter Stories</p>
+          <p className="eyebrow">Driver Stories</p>
           <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
-            Trusted by visitors <span className="text-gradient">from everywhere</span>
+            Trusted by drivers <span className="text-gradient">across the city</span>
           </h2>
           <p className="mt-4 text-lg text-muted">
-            From New York to Arizona to overseas — people fly in and rent with us
-            again and again.
+            From Manhattan to the Hamptons — clients book with us again and
+            again.
           </p>
         </header>
 
