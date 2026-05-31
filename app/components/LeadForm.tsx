@@ -1,14 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { services, site } from "./site-config";
+import { site } from "./site-config";
 import { ArrowRight, Check, Instagram } from "./icons";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
-const rentalOptions = [
-  ...services.map((s) => s.name),
-  "Not sure yet / multiple",
+const categoryOptions = [
+  "Car Rental (self-drive)",
+  "Chauffeur Service",
+  "Wedding / Event",
+  "Photo / Video Shoot",
+  "Airport Transfer",
+  "Not sure yet / other",
 ];
 
 export default function LeadForm({ compact = false }: { compact?: boolean }) {
@@ -24,7 +28,7 @@ export default function LeadForm({ compact = false }: { compact?: boolean }) {
     if (data.company) return;
 
     if (!data.name || !data.phone || !data.rental) {
-      setError("Please add your name, phone and what you'd like to rent.");
+      setError("Please add your name, phone and a category.");
       setStatus("error");
       return;
     }
@@ -111,10 +115,10 @@ export default function LeadForm({ compact = false }: { compact?: boolean }) {
         <Field label="Email" htmlFor="lf-email" optional className={compact ? "sm:col-span-2" : ""}>
           <input id="lf-email" name="email" type="email" className="field" placeholder="you@email.com" autoComplete="email" />
         </Field>
-        <Field label="Which car" htmlFor="lf-rental">
+        <Field label="Select a category" htmlFor="lf-rental">
           <select id="lf-rental" name="rental" className="field" defaultValue="" required>
             <option value="" disabled>Choose…</option>
-            {rentalOptions.map((o) => (
+            {categoryOptions.map((o) => (
               <option key={o} value={o}>{o}</option>
             ))}
           </select>

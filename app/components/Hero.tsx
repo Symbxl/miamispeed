@@ -11,7 +11,7 @@ const badges = [
 
 export default function Hero() {
   return (
-    <section id="top" className="relative isolate overflow-hidden">
+    <section id="top" className="relative isolate flex min-h-dvh flex-col overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 -z-10">
         <Image
@@ -43,7 +43,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-32 sm:px-6 sm:pt-36 lg:grid-cols-[1.05fr_minmax(0,460px)] lg:gap-10 lg:pb-28 lg:pt-44">
+      <div className="mx-auto grid w-full max-w-6xl flex-1 items-center gap-12 px-5 pb-20 pt-32 sm:px-6 sm:pt-36 lg:grid-cols-[1.05fr_minmax(0,460px)] lg:gap-10 lg:pb-28 lg:pt-44">
         {/* Left: pitch */}
         <div className="reveal max-w-xl">
           <p className="eyebrow">
